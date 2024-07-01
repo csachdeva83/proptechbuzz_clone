@@ -1,11 +1,16 @@
 import { FlipWords } from '@/components/ui/flip-words';
-import { Search } from 'lucide-react';
+import Event1 from '@/public/event1.jpg';
+import Event2 from '@/public/event2.jpg';
+import Event3 from '@/public/event3.jpg';
+import { ArrowRight, Search } from 'lucide-react';
 import BigEstate from '../../public/big_estate.png';
 import CoffeClozers from '../../public/coffee_clozers.png';
 import Optiml from '../../public/optiml.png';
 import REdistribute from '../../public/redistribute.png';
+import EventCard from './_components/event-card';
 import Navbar from './_components/navbar';
 import SpotlightCard from './_components/spotlight-card';
+
 
 
 const Home = () => {
@@ -73,7 +78,39 @@ const Home = () => {
                         logo={BigEstate}
                     />
                 </div>
+            </section>
+            <section className='w-[70%]'>
+                <div>
+                    <p>Global PropTech Events</p>
+                    <p>
+                        See more events
+                        <ArrowRight size={15}/>
+                    </p>
+                </div>
+                <div className='flex flex-wrap justify-between'>
+                    <EventCard
+                        title='LIVE Webinar PropTechBuzz on Real estate innovation and value creation in operationally intensive sectors' 
+                        date='July 03, 2024'
+                        location='Online'
+                        peopleJoined={83}
+                        eventImage={Event1}
+                    />
+                    <EventCard
+                        title='LIVE Webinar PropTechBuzz on Real estate innovation and value creation in operationally intensive sectors' 
+                        date='July 03, 2024'
+                        location='Online'
+                        peopleJoined={83}
+                        eventImage={Event2}
 
+                    />
+                    <EventCard
+                        title='LIVE Webinar PropTechBuzz on Real estate innovation and value creation in operationally intensive sectors' 
+                        date='July 03, 2024'
+                        location='Online'
+                        peopleJoined={83}
+                        eventImage={Event3}
+                    />
+                </div>
             </section>
         </main>
     )
