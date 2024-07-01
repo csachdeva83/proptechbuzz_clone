@@ -1,6 +1,11 @@
 import { FlipWords } from '@/components/ui/flip-words';
 import { Search } from 'lucide-react';
+import BigEstate from '../../public/big_estate.png';
+import CoffeClozers from '../../public/coffee_clozers.png';
+import Optiml from '../../public/optiml.png';
+import REdistribute from '../../public/redistribute.png';
 import Navbar from './_components/navbar';
+import SpotlightCard from './_components/spotlight-card';
 
 
 const Home = () => {
@@ -35,6 +40,40 @@ const Home = () => {
                         <span className='font-medium text-gray-500'>Views</span>
                     </div>
                 </div>
+            </section>
+            <section className='w-[70%]'>
+                <p className='text-3xl mb-4'>Product Spotlight</p>
+                <div className='flex flex-wrap'>
+                    <SpotlightCard
+                        company='REdistribute'
+                        like={14}
+                        description='Direct Access, Unparalleled Insights -- Specializing in Direct Source Licensing of premium MLS Real Estate Data to organizations in the real estate industry'
+                        location='North America'
+                        logo={REdistribute}
+                    />
+                    <SpotlightCard
+                        company='Coffee Clozers'
+                        like={18}
+                        description='Find Cash-Flowing Real Estate Fast'
+                        location='North America'
+                        logo={CoffeClozers}
+                    />
+                    <SpotlightCard
+                        company='Optimal'
+                        like={12}
+                        description='Cost-efficient decarbonization & investment strategies and renovation action plans for Assets and Portfolios that adhere to sustainability goals and meet business requirements (SaaS, AI-powered and data-driven)'
+                        location='Europe'
+                        logo={Optiml}
+                    />
+                    <SpotlightCard
+                        company='Big Estate'
+                        like={20}
+                        description='Automating your leads generation, management & nurturing through the power of AI.'
+                        location='India'
+                        logo={BigEstate}
+                    />
+                </div>
+
             </section>
         </main>
     )
