@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar = () => {
     return (
-        <nav className='flex gap-10 h-14 items-center justify-center border-2 border-red-500'>
+        <nav className='flex w-full gap-10 h-14 items-center justify-center border-2 border-red-500'>
             <Image
                 alt='PropTechBuzz'
                 src='./proptechbuzz_logo.svg'
