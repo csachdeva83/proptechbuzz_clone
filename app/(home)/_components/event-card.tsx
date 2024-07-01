@@ -15,7 +15,7 @@ interface EventProps {
 const EventCard = ({title, date, location, peopleJoined, eventImage}: EventProps) => {
 
     return (
-        <div className='border border-gray-400 w-[32%] rounded-2xl space-y-5'>
+        <div className='border border-gray-400 w-[32%] h-96 rounded-2xl space-y-5 relative'>
             <Image
                 src={eventImage}
                 width={1080}
@@ -34,7 +34,7 @@ const EventCard = ({title, date, location, peopleJoined, eventImage}: EventProps
                     <span className='text-gray-500 text-sm'>{location}</span>
                 </div>
             </div>
-            <div className='flex items-center justify-between p-3 border-t border-gray-300'>
+            <div className='flex items-center justify-between p-3 border-t border-gray-300 absolute bottom-0 w-full'>
                 <div className='flex items-center gap-x-3'>
                     <div className='flex relative -space-x-4'>
                         <Image 

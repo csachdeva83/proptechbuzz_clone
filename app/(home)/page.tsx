@@ -80,10 +80,10 @@ const Home = () => {
                 </div>
             </section>
             <section className='w-[70%]'>
-                <div>
-                    <p>Global PropTech Events</p>
-                    <p>
-                        See more events
+                <div className='flex items-center justify-between mb-4'>
+                    <p className='text-3xl'>Global PropTech Events</p>
+                    <p className='flex items-center gap-x-2 text-[#005EFF]'>
+                        <span className='text-sm cursor-pointer'>See more events</span>
                         <ArrowRight size={15}/>
                     </p>
                 </div>
@@ -96,17 +96,17 @@ const Home = () => {
                         eventImage={Event1}
                     />
                     <EventCard
-                        title='LIVE Webinar PropTechBuzz on Real estate innovation and value creation in operationally intensive sectors' 
-                        date='July 03, 2024'
-                        location='Online'
+                        title='Inman Connect' 
+                        date='30th July - 1st August, 2024'
+                        location='Las Vegas, USA'
                         peopleJoined={83}
                         eventImage={Event2}
 
                     />
                     <EventCard
-                        title='LIVE Webinar PropTechBuzz on Real estate innovation and value creation in operationally intensive sectors' 
-                        date='July 03, 2024'
-                        location='Online'
+                        title='CREtech Virtual Demo Day October 2024' 
+                        date='30th July - 1st August, 2024'
+                        location='Sydney, Australia'
                         peopleJoined={83}
                         eventImage={Event3}
                     />
