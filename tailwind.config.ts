@@ -14,6 +14,27 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    screens: {
+        xs: '380px',
+        sm: '640px',
+        md: '768px',
+        lg: '1025px',
+        xl: '1440px',
+        '2xl': '1536px',
+    },
+    keyframes: {
+        shimmer: {
+            '0%': {
+                'background-position': '0 0',
+            },
+            '100%': {
+                'background-position': '-200% 0',
+            },
+        },
+    },
+    animation: {
+        shimmer: 'shimmer 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+    },
   },
   plugins: [],
 };
