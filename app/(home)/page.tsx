@@ -13,6 +13,7 @@ import CoffeClozers from '../../public/coffee_clozers.png';
 import Optiml from '../../public/optiml.png';
 import REdistribute from '../../public/redistribute.png';
 import EventCard from './_components/event-card';
+import LaunchCard from './_components/launch-card';
 import Navbar from './_components/navbar';
 import SpotlightCard from './_components/spotlight-card';
 import StoryCard from './_components/story-card';
@@ -181,7 +182,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='flex items-center gap-x-3 mt-4'>
-                    <button className='flex items-center border border-gray-400 font-semibold px-6 py-2 gap-x-2 rounded'>Learn More about How it Works</button>
+                    <button className='border border-gray-400 font-semibold px-6 py-2 gap-x-2 rounded'>Learn More about How it Works</button>
                     <button className='bg-[#005EFF] flex items-center text-white font-semibold px-6 py-2 gap-x-2 rounded'>
                         Submit Your Product
                         <MousePointerClick size={18} color='white'/>
@@ -221,6 +222,25 @@ const Home = () => {
                         Join Discussion
                         <ChevronDown size={15} className='-rotate-90'/>
                     </button>
+                </div>
+            </section>
+            <section className='w-[70%]'>
+                <p className='text-3xl'>Hottest PropTech launches!</p>
+                <div>
+                    <p>Today's PropTech Launches</p>
+                    <div>
+                        <span>05</span>
+                        <span>:</span>
+                        <span>40</span>
+                        <span>:</span>
+                        <span>18</span>
+                    </div>
+                </div>
+                <div className='flex flex-wrap justify-between gap-y-3'>
+                    <LaunchCard />
+                    <LaunchCard />
+                    <LaunchCard />
+                    <LaunchCard />
                 </div>
             </section>
         </main>
