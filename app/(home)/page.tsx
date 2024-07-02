@@ -5,7 +5,8 @@ import Event3 from '@/public/event3.jpg';
 import Story1 from '@/public/story1.jpg';
 import Story2 from '@/public/story2.jpg';
 import Story3 from '@/public/story3.jpg';
-import { ArrowRight, Search } from 'lucide-react';
+import { ArrowRight, MousePointerClick, Search } from 'lucide-react';
+import Image from 'next/image';
 import BigEstate from '../../public/big_estate.png';
 import CoffeClozers from '../../public/coffee_clozers.png';
 import Optiml from '../../public/optiml.png';
@@ -138,6 +139,54 @@ const Home = () => {
                         title='Modern Agent, Modern Interactions: How Ask the Agent is Transforming Real Estate Client Engagement with Interactive Videos' 
                         storyImage={Story3}
                     />
+                </div>
+            </section>
+            <section  className='w-[70%] flex flex-col items-center gap-y-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl p-5'>
+                <p className='text-[#005EFF] font-bold text-lg'>HOW TO LAUNCH PRODUCTS ON PROPTECHBUZZ FOR FREE?</p>
+                <div className='flex items-center justify-between'>
+                    <div className='flex flex-col items-center justify-center w-[30%] h-40 gap-y-2'>
+                        <div className='h-20 w-20'>
+                            <Image 
+                                src='./product.svg'
+                                width={90}
+                                height={90}
+                                alt='product'
+                            />
+                        </div>
+                        <span className='font-semibold text-lg'>Submit Product with us</span>
+                        <p className='text-center text-sm text-gray-500'>Submit your product on PropTechBuzz <span className='text-[#005EFF] font-semibold'>for free</span>.</p>
+                    </div>
+                    <div className='flex flex-col items-center justify-center w-[30%] h-40 gap-y-2'>
+                        <div className='h-20 w-20'>
+                            <Image 
+                                src='./launch.svg'
+                                width={90}
+                                height={90}
+                                alt='product'
+                            />
+                        </div>
+                        <span className='font-semibold text-lg'>Launch Day</span>
+                        <p className='text-center text-sm text-gray-500'>Every day we <span className='text-[#005EFF] font-semibold'>select and launch</span> 8-12 Products that have submitted with us.</p>
+                    </div>
+                    <div className='flex flex-col items-center justify-center w-[30%] h-40 gap-y-2'>
+                        <div className='h-20 w-20'>
+                            <Image 
+                                src='./attention.svg'
+                                width={70}
+                                height={70}
+                                alt='product'
+                            />
+                        </div>
+                        <span className='font-semibold text-lg'>Get Attention</span>
+                        <p className='text-center text-sm text-gray-500'>Reach <span className='text-[#005EFF] font-semibold'>100K global audience</span> weekly, with a chance to win product spotlight based on votes.</p>
+                    </div>
+                </div>
+                <div className='flex items-center gap-x-3 mt-4'>
+                    <button className='flex items-center border border-gray-400 font-semibold px-6 py-2 gap-x-2 rounded'>Learn More about How it Works</button>
+                    <button className='bg-[#005EFF] flex items-center text-white font-semibold px-6 py-2 gap-x-2 rounded'>
+                        Submit Your Product
+                        <MousePointerClick size={18} color='white'/>
+                    </button>
                 </div>
             </section>
         </main>
