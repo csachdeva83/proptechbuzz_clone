@@ -27,7 +27,7 @@ const Home = () => {
     const words = ["Conversations", "Leaders", "Products", "News"];
 
     return (
-        <main className='flex w-screen flex-col items-center border-2 border-green-800'>
+        <main className='flex w-screen flex-col items-center gap-y-20'>
             <Navbar />
             <section className='bg-gradient-to-bl from-slate-100 to-blue-100 flex flex-col items-center justify-center gap-y-6 w-[70%] rounded-2xl py-11'>
                 <div className='flex flex-col items-center'>
@@ -88,63 +88,6 @@ const Home = () => {
                     />
                 </div>
             </section>
-            <section className='w-[70%]'>
-                <div className='flex items-center justify-between mb-4'>
-                    <p className='text-3xl'>Global PropTech Events</p>
-                    <p className='flex items-center gap-x-2 text-[#005EFF]'>
-                        <span className='text-sm cursor-pointer'>See more events</span>
-                        <ArrowRight size={15}/>
-                    </p>
-                </div>
-                <div className='flex flex-wrap justify-between'>
-                    <EventCard
-                        title='LIVE Webinar PropTechBuzz on Real estate innovation and value creation in operationally intensive sectors' 
-                        date='July 03, 2024'
-                        location='Online'
-                        peopleJoined={83}
-                        eventImage={Event1}
-                    />
-                    <EventCard
-                        title='Inman Connect' 
-                        date='30th July - 1st August, 2024'
-                        location='Las Vegas, USA'
-                        peopleJoined={83}
-                        eventImage={Event2}
-
-                    />
-                    <EventCard
-                        title='CREtech Virtual Demo Day October 2024' 
-                        date='30th July - 1st August, 2024'
-                        location='Sydney, Australia'
-                        peopleJoined={83}
-                        eventImage={Event3}
-                    />
-                </div>
-            </section>
-            <section className='w-[70%]'>
-                <div className='flex items-center justify-between mb-4'>
-                    <p className='text-3xl'>Global PropTech Stories</p>
-                    <p className='flex items-center gap-x-2 text-[#005EFF]'>
-                        <span className='text-sm cursor-pointer'>See more news</span>
-                        <ArrowRight size={15}/>
-                    </p>
-                </div>
-                <div className='flex flex-wrap justify-between'>
-                    <StoryCard
-                        title='The Vision Behind Prudence’s New $80 Million Fund Totaling $230 Million' 
-                        storyImage={Story1}
-                    />
-                    <StoryCard
-                        title='Costar’s $1.6B acquisition of Matterport: How did proptech leaders perceive this news?' 
-                        storyImage={Story2}
-
-                    />
-                    <StoryCard
-                        title='Modern Agent, Modern Interactions: How Ask the Agent is Transforming Real Estate Client Engagement with Interactive Videos' 
-                        storyImage={Story3}
-                    />
-                </div>
-            </section>
             <section  className='w-[70%] flex flex-col items-center gap-y-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl p-5'>
                 <p className='text-[#005EFF] font-bold text-lg'>HOW TO LAUNCH PRODUCTS ON PROPTECHBUZZ FOR FREE?</p>
                 <div className='flex items-center justify-between'>
@@ -190,41 +133,6 @@ const Home = () => {
                     <button className='bg-[#005EFF] flex items-center text-white font-semibold px-6 py-2 gap-x-2 rounded'>
                         Submit Your Product
                         <MousePointerClick size={18} color='white'/>
-                    </button>
-                </div>
-            </section>
-            <section className='bg-[#005EFF] flex items-center gap-x-11 w-[70%] h-72 rounded-2xl'>
-                <Image src={LeadindForum} alt='leading forum' width={900} height={547} className='h-full object-cover' />
-                <div className='flex items-center justify-center flex-col gap-y-5 p-20'>
-                    <p className='text-white font-bold text-center text-2xl'>The leading online forum where the global proptech & real estate community engages.</p>
-                    <p className='text-white text-center text-sm'>From Cambodia to Canada - one place where global proptech & real estate professionals connect, converse and collaborate.</p>
-                    <div className='flex items-center gap-x-7'>
-                        <div className='flex flex-col items-center'>
-                            <span className='text-2xl font-semibold text-white'>779+</span>
-                            <span className='text-white text-sm'>Posts</span>
-                        </div>
-                        <div className="w-px self-stretch bg-gray-300" />
-                        <div className='flex flex-col items-center'>
-                            <span className='text-2xl font-semibold text-white'>3077+</span>
-                            <span className='text-white text-sm'>Members</span>
-                        </div>
-                        <div className="w-px self-stretch bg-gray-300" />
-                        <div className='flex flex-col items-center'>
-                            <span className='text-2xl font-semibold text-[#FFD700]'>483+</span>
-                            <span className='text-[#FFD700] text-sm flex items-center gap-x-2'>
-                                <Image src='./vip.svg' width={15} height={15} alt='VIP' />
-                                VIP Members
-                            </span>
-                        </div>
-                        <div className="w-px self-stretch bg-gray-300" />
-                        <div className='flex flex-col items-center'>
-                            <span className='text-2xl font-semibold text-white'>29.4K</span>
-                            <span className='text-white text-sm'>Views</span>
-                        </div>
-                    </div>
-                    <button className='flex items-center gap-1 px-8 py-2 bg-[#FFA804] rounded text-white font-medium'>
-                        Join Discussion
-                        <ChevronDown size={15} className='-rotate-90'/>
                     </button>
                 </div>
             </section>
@@ -294,6 +202,99 @@ const Home = () => {
                             img: Founder2
                         }}
                     />
+                </div>
+            </section>
+            <section className='w-[70%]'>
+                <div className='flex items-center justify-between mb-4'>
+                    <p className='text-3xl'>Global PropTech Events</p>
+                    <p className='flex items-center gap-x-2 text-[#005EFF]'>
+                        <span className='text-sm cursor-pointer'>See more events</span>
+                        <ArrowRight size={15}/>
+                    </p>
+                </div>
+                <div className='flex flex-wrap justify-between'>
+                    <EventCard
+                        title='LIVE Webinar PropTechBuzz on Real estate innovation and value creation in operationally intensive sectors' 
+                        date='July 03, 2024'
+                        location='Online'
+                        peopleJoined={83}
+                        eventImage={Event1}
+                    />
+                    <EventCard
+                        title='Inman Connect' 
+                        date='30th July - 1st August, 2024'
+                        location='Las Vegas, USA'
+                        peopleJoined={83}
+                        eventImage={Event2}
+
+                    />
+                    <EventCard
+                        title='CREtech Virtual Demo Day October 2024' 
+                        date='30th July - 1st August, 2024'
+                        location='Sydney, Australia'
+                        peopleJoined={83}
+                        eventImage={Event3}
+                    />
+                </div>
+            </section>
+            <section className='w-[70%]'>
+                <div className='flex items-center justify-between mb-4'>
+                    <p className='text-3xl'>Global PropTech Stories</p>
+                    <p className='flex items-center gap-x-2 text-[#005EFF]'>
+                        <span className='text-sm cursor-pointer'>See more news</span>
+                        <ArrowRight size={15}/>
+                    </p>
+                </div>
+                <div className='flex flex-wrap justify-between'>
+                    <StoryCard
+                        title='The Vision Behind Prudence’s New $80 Million Fund Totaling $230 Million' 
+                        storyImage={Story1}
+                    />
+                    <StoryCard
+                        title='Costar’s $1.6B acquisition of Matterport: How did proptech leaders perceive this news?' 
+                        storyImage={Story2}
+
+                    />
+                    <StoryCard
+                        title='Modern Agent, Modern Interactions: How Ask the Agent is Transforming Real Estate Client Engagement with Interactive Videos' 
+                        storyImage={Story3}
+                    />
+                </div>
+            </section>
+
+            <section className='bg-[#005EFF] flex items-center gap-x-11 w-[70%] h-72 rounded-2xl'>
+                <Image src={LeadindForum} alt='leading forum' width={900} height={547} className='h-full object-cover' />
+                <div className='flex items-center justify-center flex-col gap-y-5 p-20'>
+                    <p className='text-white font-bold text-center text-2xl'>The leading online forum where the global proptech & real estate community engages.</p>
+                    <p className='text-white text-center text-sm'>From Cambodia to Canada - one place where global proptech & real estate professionals connect, converse and collaborate.</p>
+                    <div className='flex items-center gap-x-7'>
+                        <div className='flex flex-col items-center'>
+                            <span className='text-2xl font-semibold text-white'>779+</span>
+                            <span className='text-white text-sm'>Posts</span>
+                        </div>
+                        <div className="w-px self-stretch bg-gray-300" />
+                        <div className='flex flex-col items-center'>
+                            <span className='text-2xl font-semibold text-white'>3077+</span>
+                            <span className='text-white text-sm'>Members</span>
+                        </div>
+                        <div className="w-px self-stretch bg-gray-300" />
+                        <div className='flex flex-col items-center'>
+                            <span className='text-2xl font-semibold text-[#FFD700]'>483+</span>
+                            <span className='text-[#FFD700] text-sm flex items-center gap-x-2'>
+                                <Image src='./vip.svg' width={15} height={15} alt='VIP' />
+                                VIP Members
+                            </span>
+                        </div>
+                        <div className="w-px self-stretch bg-gray-300" />
+                        <div className='flex flex-col items-center'>
+                            <span className='text-2xl font-semibold text-white'>29.4K</span>
+                            <span className='text-white text-sm'>Views</span>
+                        </div>
+                    </div>
+                    <button className='flex items-center gap-1 px-8 py-2 bg-[#FFA804] rounded text-white font-medium'>
+                        Join Discussion
+                        <ChevronDown size={15} className='-rotate-90'/>
+                    </button>
                 </div>
             </section>
             <Footer />

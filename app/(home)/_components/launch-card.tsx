@@ -62,7 +62,7 @@ const LaunchCard = ({logo, company, description, likes, location, features, foun
                         </span>
                     </div>
             </div>
-            <div className='bg-gradient-to-tr from-cyan-50 to-indigo-100 h-full rounded-xl flex flex-col items-start justify-center'>
+            <div className='bg-gradient-to-tr from-cyan-50 to-indigo-100 h-full rounded-xl w-1/4 flex-col items-start justify-center'>
                 <div className='flex items-center gap-x-2 px-3 py-5'>
                     <Image src={founder1.img} alt='Founder1' width={30} height={30} className='border-2 border-[#FFD700] rounded-full w-10 h-10 object-cover'/>
                     <div>
