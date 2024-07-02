@@ -2,10 +2,11 @@ import { FlipWords } from '@/components/ui/flip-words';
 import Event1 from '@/public/event1.jpg';
 import Event2 from '@/public/event2.jpg';
 import Event3 from '@/public/event3.jpg';
+import LeadindForum from '@/public/leading-forum.png';
 import Story1 from '@/public/story1.jpg';
 import Story2 from '@/public/story2.jpg';
 import Story3 from '@/public/story3.jpg';
-import { ArrowRight, MousePointerClick, Search } from 'lucide-react';
+import { ArrowRight, ChevronDown, MousePointerClick, Search } from 'lucide-react';
 import Image from 'next/image';
 import BigEstate from '../../public/big_estate.png';
 import CoffeClozers from '../../public/coffee_clozers.png';
@@ -15,8 +16,6 @@ import EventCard from './_components/event-card';
 import Navbar from './_components/navbar';
 import SpotlightCard from './_components/spotlight-card';
 import StoryCard from './_components/story-card';
-
-
 
 const Home = () => {
 
@@ -186,6 +185,41 @@ const Home = () => {
                     <button className='bg-[#005EFF] flex items-center text-white font-semibold px-6 py-2 gap-x-2 rounded'>
                         Submit Your Product
                         <MousePointerClick size={18} color='white'/>
+                    </button>
+                </div>
+            </section>
+            <section className='bg-[#005EFF] flex items-center gap-x-11 w-[70%] h-72 rounded-2xl'>
+                <Image src={LeadindForum} alt='leading forum' width={900} height={547} className='h-full object-cover' />
+                <div className='flex items-center justify-center flex-col gap-y-5 p-20'>
+                    <p className='text-white font-bold text-center text-2xl'>The leading online forum where the global proptech & real estate community engages.</p>
+                    <p className='text-white text-center text-sm'>From Cambodia to Canada - one place where global proptech & real estate professionals connect, converse and collaborate.</p>
+                    <div className='flex items-center gap-x-7'>
+                        <div className='flex flex-col items-center'>
+                            <span className='text-2xl font-semibold text-white'>779+</span>
+                            <span className='text-white text-sm'>Posts</span>
+                        </div>
+                        <div className="w-px self-stretch bg-gray-300" />
+                        <div className='flex flex-col items-center'>
+                            <span className='text-2xl font-semibold text-white'>3077+</span>
+                            <span className='text-white text-sm'>Members</span>
+                        </div>
+                        <div className="w-px self-stretch bg-gray-300" />
+                        <div className='flex flex-col items-center'>
+                            <span className='text-2xl font-semibold text-[#FFD700]'>483+</span>
+                            <span className='text-[#FFD700] text-sm flex items-center gap-x-2'>
+                                <Image src='./vip.svg' width={15} height={15} alt='VIP' />
+                                VIP Members
+                            </span>
+                        </div>
+                        <div className="w-px self-stretch bg-gray-300" />
+                        <div className='flex flex-col items-center'>
+                            <span className='text-2xl font-semibold text-white'>29.4K</span>
+                            <span className='text-white text-sm'>Views</span>
+                        </div>
+                    </div>
+                    <button className='flex items-center gap-1 px-8 py-2 bg-[#FFA804] rounded text-white font-medium'>
+                        Join Discussion
+                        <ChevronDown size={15} className='-rotate-90'/>
                     </button>
                 </div>
             </section>
