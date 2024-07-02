@@ -2,6 +2,9 @@ import { FlipWords } from '@/components/ui/flip-words';
 import Event1 from '@/public/event1.jpg';
 import Event2 from '@/public/event2.jpg';
 import Event3 from '@/public/event3.jpg';
+import FlairConnect from '@/public/flair_connect.jpg';
+import Founder1 from '@/public/founder1.jpg';
+import Founder2 from '@/public/founder2.jpg';
 import LeadindForum from '@/public/leading-forum.png';
 import Story1 from '@/public/story1.jpg';
 import Story2 from '@/public/story2.jpg';
@@ -225,22 +228,71 @@ const Home = () => {
                 </div>
             </section>
             <section className='w-[70%]'>
-                <p className='text-3xl'>Hottest PropTech launches!</p>
-                <div>
-                    <p>Today's PropTech Launches</p>
-                    <div>
-                        <span>05</span>
-                        <span>:</span>
-                        <span>40</span>
-                        <span>:</span>
-                        <span>18</span>
-                    </div>
-                </div>
+                <p className='text-3xl mb-4'>Hottest PropTech launches!</p>
                 <div className='flex flex-wrap justify-between gap-y-3'>
-                    <LaunchCard />
-                    <LaunchCard />
-                    <LaunchCard />
-                    <LaunchCard />
+                    <LaunchCard 
+                        logo={FlairConnect}
+                        company='Flair Connect'
+                        description='Automate rent & specials in Google Ads & GBP.'
+                        location='North America'
+                        likes={15}
+                        features={[
+                            'Real Estate Data & Insights',
+                            'Marketing & Advertising'
+                        ]}
+                        founder1 = {{
+                            fullName: 'Sudhanshu Kejriwal',
+                            designation: 'Co-Founder / Managing Diredtor',
+                            img: Founder1
+                        }}
+                        founder2 = {{
+                            fullName: 'Kartik Krishna',
+                            designation: 'Director / Co-Founder',
+                            img: Founder2
+                        }}
+                    />
+                    <LaunchCard 
+                        logo={FlairConnect}
+                        company='Flair Connect'
+                        description='Automate rent & specials in Google Ads & GBP.'
+                        location='North America'
+                        likes={15}
+                        features={[
+                            'Real Estate Data & Insights',
+                            'Marketing & Advertising'
+                        ]}
+                        founder1 = {{
+                            fullName: 'Sudhanshu Kejriwal',
+                            designation: 'Co-Founder / Managing Diredtor',
+                            img: Founder1
+                        }}
+                        founder2 = {{
+                            fullName: 'Kartik Krishna',
+                            designation: 'Director / Co-Founder',
+                            img: Founder2
+                        }}
+                    />
+                    <LaunchCard 
+                        logo={FlairConnect}
+                        company='Flair Connect'
+                        description='Automate rent & specials in Google Ads & GBP.'
+                        location='North America'
+                        likes={15}
+                        features={[
+                            'Real Estate Data & Insights',
+                            'Marketing & Advertising'
+                        ]}
+                        founder1 = {{
+                            fullName: 'Sudhanshu Kejriwal',
+                            designation: 'Co-Founder / Managing Diredtor',
+                            img: Founder1
+                        }}
+                        founder2 = {{
+                            fullName: 'Kartik Krishna',
+                            designation: 'Director / Co-Founder',
+                            img: Founder2
+                        }}
+                    />
                 </div>
             </section>
         </main>
