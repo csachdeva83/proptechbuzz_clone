@@ -27,7 +27,7 @@ const Home = () => {
     const words = ["Conversations", "Leaders", "Products", "News"];
 
     return (
-        <main className='flex w-screen flex-col items-center gap-y-20'>
+        <main className='flex max-w-full flex-col items-center gap-y-20'>
             <Navbar />
             <section className='bg-gradient-to-bl from-slate-100 to-blue-100 flex flex-col items-center justify-center gap-y-6 w-[70%] rounded-2xl py-11'>
                 <div className='flex flex-col items-center'>
