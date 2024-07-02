@@ -23,7 +23,7 @@ interface ILaunchProps {
 const LaunchCard = ({logo, company, description, likes, location, features, founder1, founder2}: ILaunchProps) => {
     return (
         <div className='w-full flex items-center justify-start gap-x-3'>
-            <div className='space-y-5 border border-gray-300 rounded-xl px-5 py-6 w-[75%]'>
+            <div className='space-y-5 border border-gray-300 rounded-xl px-5 py-6 w-full lg:w-[75%]'>
                     <div className='flex items-center justify-between'>
                         <div className='flex items-center gap-x-3'>
                             <Image
@@ -62,21 +62,21 @@ const LaunchCard = ({logo, company, description, likes, location, features, foun
                         </span>
                     </div>
             </div>
-            <div className='bg-gradient-to-tr from-cyan-50 to-indigo-100 h-full rounded-xl w-1/4 flex-col items-start justify-center'>
-                <div className='flex items-center gap-x-2 px-3 py-5'>
+            <div className='bg-gradient-to-tr from-cyan-50 to-indigo-100 h-full rounded-xl w-1/4 hidden lg:flex flex-col items-start justify-center'>
+                <div className='flex items-center gap-x-2 px-3 py-5 w-full'>
                     <Image src={founder1.img} alt='Founder1' width={30} height={30} className='border-2 border-[#FFD700] rounded-full w-10 h-10 object-cover'/>
-                    <div>
-                        <p className='font-semibold'>{founder1.fullName}</p>
-                        <p className='text-sm text-gray-600'>{founder1.designation}</p>
+                    <div className="w-full">
+                        <p className='lg:text-sm xl:text-base font-semibold'>{founder1.fullName}</p>
+                        <p className='lg:text-xs xl:text-sm text-gray-600 truncate'>{founder1.designation}</p>
                     </div>
                 </div>
                 {
                     founder2 && (
-                        <div className='flex items-center gap-x-2  px-3 py-5'>
+                        <div className='flex items-center gap-x-2 px-3 py-5 w-full'>
                             <Image src={founder2.img} alt='Founder2' width={30} height={30} className='border-2 border-[#FFD700] rounded-full w-10 h-10 object-cover'/>
-                            <div>
-                                <p className='font-semibold'>{founder2.fullName}</p>
-                                <p className='text-sm text-gray-600'>{founder2.designation}</p>
+                            <div className="w-full">
+                                <p className='lg:text-sm xl:text-base font-semibold'>{founder2.fullName}</p>
+                                <p className='lg:text-xs xl:text-sm text-gray-600 truncate'>{founder2.designation}</p>
                             </div>
                         </div>
                     )

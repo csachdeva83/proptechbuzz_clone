@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const Navbar = () => {
     return (
-        <nav className='flex w-full gap-10 h-14 items-center justify-center sticky top-0 z-30 bg-white bg-opacity-60 backdrop-blur-lg backdrop-filter'>
+        <nav className='flex w-full lg:gap-x-5 xl:gap-x-10 h-14 items-center justify-center sticky top-0 z-30 bg-white bg-opacity-60 backdrop-blur-lg backdrop-filter lg:text-sm xl:text-base'>
             <Image
                 alt='PropTechBuzz'
                 src='./proptechbuzz_logo.svg'
-                className='lg:w-[172px] lg:h-[25px] cursor-pointer'
+                className='xl:w-[172px] xl:h-[25px] lg:w-[167px] lg:h-[20px] cursor-pointer'
                 height={860}
                 width={125} 
             />
