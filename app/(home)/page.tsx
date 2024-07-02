@@ -16,6 +16,7 @@ import CoffeClozers from '../../public/coffee_clozers.png';
 import Optiml from '../../public/optiml.png';
 import REdistribute from '../../public/redistribute.png';
 import EventCard from './_components/event-card';
+import Footer from './_components/footer';
 import LaunchCard from './_components/launch-card';
 import Navbar from './_components/navbar';
 import SpotlightCard from './_components/spotlight-card';
@@ -295,6 +296,7 @@ const Home = () => {
                     />
                 </div>
             </section>
+            <Footer />
         </main>
     )
 }
