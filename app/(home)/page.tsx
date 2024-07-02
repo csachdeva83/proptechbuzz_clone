@@ -2,6 +2,9 @@ import { FlipWords } from '@/components/ui/flip-words';
 import Event1 from '@/public/event1.jpg';
 import Event2 from '@/public/event2.jpg';
 import Event3 from '@/public/event3.jpg';
+import Story1 from '@/public/story1.jpg';
+import Story2 from '@/public/story2.jpg';
+import Story3 from '@/public/story3.jpg';
 import { ArrowRight, Search } from 'lucide-react';
 import BigEstate from '../../public/big_estate.png';
 import CoffeClozers from '../../public/coffee_clozers.png';
@@ -10,6 +13,7 @@ import REdistribute from '../../public/redistribute.png';
 import EventCard from './_components/event-card';
 import Navbar from './_components/navbar';
 import SpotlightCard from './_components/spotlight-card';
+import StoryCard from './_components/story-card';
 
 
 
@@ -109,6 +113,30 @@ const Home = () => {
                         location='Sydney, Australia'
                         peopleJoined={83}
                         eventImage={Event3}
+                    />
+                </div>
+            </section>
+            <section className='w-[70%]'>
+                <div className='flex items-center justify-between mb-4'>
+                    <p className='text-3xl'>Global PropTech Stories</p>
+                    <p className='flex items-center gap-x-2 text-[#005EFF]'>
+                        <span className='text-sm cursor-pointer'>See more news</span>
+                        <ArrowRight size={15}/>
+                    </p>
+                </div>
+                <div className='flex flex-wrap justify-between'>
+                    <StoryCard
+                        title='The Vision Behind Prudence’s New $80 Million Fund Totaling $230 Million' 
+                        storyImage={Story1}
+                    />
+                    <StoryCard
+                        title='Costar’s $1.6B acquisition of Matterport: How did proptech leaders perceive this news?' 
+                        storyImage={Story2}
+
+                    />
+                    <StoryCard
+                        title='Modern Agent, Modern Interactions: How Ask the Agent is Transforming Real Estate Client Engagement with Interactive Videos' 
+                        storyImage={Story3}
                     />
                 </div>
             </section>
