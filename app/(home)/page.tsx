@@ -27,35 +27,35 @@ const Home = () => {
     return (
         <main className='w-full max-w-full flex flex-col items-center justify-center border border-green-600'>
             {/* <Navbar /> */}
-            <article className='md:my-12 lg:my-14 xl:my-20 md:w-[90%] lg:w-[85%] xl:w-[70%] flex flex-col md:gap-y-12 lg:gap-y-14 xl:gap-y-20'>
+            <article className='my-10 lg:my-14 xl:my-20 w-[93%] sm:w-[90%] lg:w-[85%] xl:w-[70%] flex flex-col gap-y-10 md:gap-y-12 lg:gap-y-14 xl:gap-y-20'>
                 <section className='bg-gradient-to-bl from-slate-100 to-blue-100 flex flex-col items-center justify-center gap-y-6 w-full rounded-2xl py-11'>
-                    <div className='flex flex-col items-center'>
-                        <p className='md:text-4xl xl:text-5xl font-bold'>Discover Global PropTech</p>
-                        <FlipWords className='md:text-4xl xl:text-5xl font-bold text-[#005EFF]' words={words} />
+                    <div className='flex flex-col items-center text-center'>
+                        <p className='text-3xl sm:text-4xl xl:text-5xl font-bold'>Discover Global PropTech</p>
+                        <FlipWords className='text-3xl sm:text-4xl xl:text-5xl font-bold text-[#005EFF]' words={words} />
                     </div>
-                    <div className='flex w-1/2 gap-2 bg-white items-center md:py-3 md:px-2 lg:py-4 lg:px-3 rounded-3xl shadow-lg'>
+                    <div className='flex w-4/5 sm:w-3/5 md:w-1/2 gap-2 bg-white items-center py-3 px-2 lg:py-4 lg:px-3 rounded-3xl shadow-lg'>
                         <Search size={15} color='#6B7280' className='cursor-pointer'/>
                         <input placeholder='What are you looking for?' className='w-full text-sm outline-none'  />
                     </div>
-                    <div className='flex gap-x-10'>
-                        <div className='flex flex-col'>
-                            <span className='md:text-xl lg:text-3xl font-semibold text-[#005EFF]'>874+</span>
-                            <span className='font-medium text-gray-500'>Products</span>
+                    <div className='flex gap-x-7 sm:gap-x-10'>
+                        <div className='flex flex-col items-center'>
+                            <span className='text-sm sm:text-xl lg:text-3xl font-semibold text-[#005EFF]'>874+</span>
+                            <span className='text-sm sm:text-base font-medium text-gray-500'>Products</span>
                         </div>
                         <div className='border-[1px] border-gray-300'/>
-                        <div className='flex flex-col'>
-                            <span className='md:text-xl lg:text-3xl font-semibold text-[#005EFF]'>5074+</span>
-                            <span className='font-medium text-gray-500'>Members</span>
+                        <div className='flex flex-col items-center'>
+                            <span className='text-sm sm:text-xl lg:text-3xl font-semibold text-[#005EFF]'>5074+</span>
+                            <span className='text-sm sm:text-base font-medium text-gray-500'>Members</span>
                         </div>
                         <div className='border-[1px] border-gray-300'/>
-                        <div className='flex flex-col'>
-                            <span className='md:text-xl lg:text-3xl font-semibold text-[#005EFF]'>347.1K</span>
-                            <span className='font-medium text-gray-500'>Views</span>
+                        <div className='flex flex-col items-center'>
+                            <span className='text-sm sm:text-xl lg:text-3xl font-semibold text-[#005EFF]'>347.1K</span>
+                            <span className='text-sm sm:text-base font-medium text-gray-500'>Views</span>
                         </div>
                     </div>
                 </section>
                 <section className='w-full'>
-                    <p className='text-3xl mb-4'>Product Spotlight</p>
+                    <p className='text-2xl font-semibold md:text-3xl mb-4'>Product Spotlight</p>
                     <div className='flex flex-wrap justify-between gap-y-3'>
                         <SpotlightCard
                             company='REdistribute'
@@ -88,58 +88,58 @@ const Home = () => {
                     </div>
                 </section>
                 <section  className='w-full flex flex-col items-center gap-y-5 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl p-5'>
-                    <p className='text-[#005EFF] font-bold text-xl lg:text-lg'>HOW TO LAUNCH PRODUCTS ON PROPTECHBUZZ FOR FREE?</p>
-                    <div className='flex items-center justify-between'>
-                        <div className='flex flex-col items-center justify-center w-[30%] h-40 gap-y-2'>
-                            <div className='h-15 w-15 lg:h-20 lg:w-20'>
+                    <p className='text-[#005EFF] font-bold text-center text-xl lg:text-lg'>HOW TO LAUNCH PRODUCTS ON PROPTECHBUZZ FOR FREE?</p>
+                    <div className='flex items-center justify-between flex-col md:flex-row gap-y-3 sm:gap-y-0'>
+                        <div className='flex flex-col items-center justify-center w-full md:w-[30%] h-40 gap-y-2'>
+                            <div className='flex items-center justify-center h-20 w-20 md:h-15 md:w-15 lg:h-20 lg:w-20'>
                                 <Image 
                                     src='./product.svg'
                                     width={90}
                                     height={90}
                                     alt='product'
-                                    className='object-cover'
+                                    className='object-contain'
                                 />
                             </div>
-                            <span className='font-semibold text-sm lg:text-lg'>Submit Product with us</span>
-                            <p className='text-center text-xs lg:text-sm text-gray-500'>Submit your product on PropTechBuzz <span className='text-[#005EFF] font-semibold'>for free</span>.</p>
+                            <span className='font-semibold text-lg md:text-sm lg:text-lg'>Submit Product with us</span>
+                            <p className='text-center text-sm md:text-xs lg:text-sm text-gray-500'>Submit your product on PropTechBuzz <span className='text-[#005EFF] font-semibold'>for free</span>.</p>
                         </div>
-                        <div className='flex flex-col items-center justify-center w-[30%] h-40 gap-y-2'>
-                            <div className='h-15 w-15 lg:h-20 lg:w-20'>
+                        <div className='flex flex-col items-center justify-center w-full md:w-[30%] h-40 gap-y-2'>
+                            <div className='flex items-center justify-center h-20 w-20 md:h-15 md:w-15 lg:h-20 lg:w-20'>
                                 <Image 
                                     src='./launch.svg'
                                     width={90}
                                     height={90}
                                     alt='product'
-                                    className='object-cover'
+                                    className='object-contain'
                                 />
                             </div>
-                            <span className='font-semibold text-sm lg:text-lg'>Launch Day</span>
-                            <p className='text-center text-xs lg:text-sm text-gray-500'>Every day we <span className='text-[#005EFF] font-semibold'>select and launch</span> 8-12 Products that have submitted with us.</p>
+                            <span className='font-semibold text-lg md:text-sm lg:text-lg'>Launch Day</span>
+                            <p className='text-center text-sm md:text-xs lg:text-sm text-gray-500'>Every day we <span className='text-[#005EFF] font-semibold'>select and launch</span> 8-12 Products that have submitted with us.</p>
                         </div>
-                        <div className='flex flex-col items-center justify-center w-[30%] h-40 gap-y-2'>
-                            <div className='h-15 w-15 lg:h-20 lg:w-20'>
+                        <div className='flex flex-col items-center justify-center w-full md:w-[30%] h-40 gap-y-2 mt-2 sm:mt-0'>
+                            <div className='flex items-center justify-center h-20 w-20 md:h-15 md:w-15 lg:h-20 lg:w-20'>
                                 <Image 
                                     src='./attention.svg'
-                                    width={70}
-                                    height={70}
+                                    width={60}
+                                    height={60}
                                     alt='product'
-                                    className='object-cover'
+                                    className='md:w-[70px] md:h-[70px] object-contain'
                                 />
                             </div>
-                            <span className='font-semibold text-sm lg:text-lg'>Get Attention</span>
-                            <p className='text-center text-xs lg:text-sm text-gray-500'>Reach <span className='text-[#005EFF] font-semibold'>100K global audience</span> weekly, with a chance to win product spotlight based on votes.</p>
+                            <span className='font-semibold text-lg md:text-sm lg:text-lg'>Get Attention</span>
+                            <p className='text-center text-sm md:text-xs lg:text-sm text-gray-500'>Reach <span className='text-[#005EFF] font-semibold'>100K global audience</span> weekly, with a chance to win product spotlight based on votes.</p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-x-3 mt-4 text-sm lg:text-base'>
-                        <button className='border border-gray-400 font-semibold px-6 py-2 gap-x-2 rounded'>Learn More about How it Works</button>
-                        <button className='bg-[#005EFF] flex items-center text-white font-semibold px-6 py-2 gap-x-2 rounded'>
+                    <div className='flex items-center flex-col sm:flex-row gap-x-3 mt-4 text-sm lg:text-base gap-y-3 sm:gap-y-0'>
+                        <button className='border border-gray-400 font-semibold px-6 py-2 gap-x-2 rounded w-full sm:w-fit'>Learn More about How it Works</button>
+                        <button className='bg-[#005EFF] flex items-center justify-center text-white font-semibold px-6 py-2 gap-x-2 rounded w-full sm:w-fit'>
                             Submit Your Product
                             <MousePointerClick size={18} color='white'/>
                         </button>
                     </div>
                 </section>
                 <section className='w-full'>
-                    <p className='text-3xl mb-4'>Today PropTech launches!</p>
+                    <p className='text-2xl font-semibold lg:text-3xl mb-4'>Today PropTech Launches!</p>
                     <div className='flex flex-wrap justify-between gap-y-3'>
                         <LaunchCard 
                             logo={FlairConnect}
@@ -149,6 +149,10 @@ const Home = () => {
                             likes={15}
                             features={[
                                 'Real Estate Data & Insights',
+                                'Marketing & Advertising',
+                                'Real Estate Data & Insights',
+                                'Marketing & Advertising',
+                                'Real Estate Data & Insights',
                                 'Marketing & Advertising'
                             ]}
                             founder1 = {{
@@ -207,14 +211,15 @@ const Home = () => {
                     </div>
                 </section>
                 <section className='w-full'>
-                    <div className='flex items-center justify-between mb-4'>
-                        <p className='text-3xl'>Global PropTech Events</p>
-                        <p className='flex items-center gap-x-2 text-[#005EFF]'>
-                            <span className='text-sm cursor-pointer'>See more events</span>
+                    <div className='flex items-center justify-between mb-4 gap-x-3'>
+                        <p className='text-2xl font-semibold md:text-3xl'>Global PropTech Events</p>
+                        <p className='flex items-center gap-x-1 sm:gap-x-2 text-[#005EFF]'>
+                            <span className='w-fit sm:block hidden text-sm cursor-pointer'>See more events</span>
+                            <span className='w-fit text-xs sm:hidden cursor-pointer'>Explore</span>
                             <ArrowRight size={15}/>
                         </p>
                     </div>
-                    <div className='flex flex-wrap justify-between'>
+                    <div className='flex flex-wrap justify-between gap-y-3 md:gap-y-0'>
                         <EventCard
                             title='LIVE Webinar PropTechBuzz on Real estate innovation and value creation in operationally intensive sectors' 
                             date='July 03, 2024'
@@ -240,14 +245,15 @@ const Home = () => {
                     </div>
                 </section>
                 <section className='w-full'>
-                    <div className='flex items-center justify-between mb-4'>
-                        <p className='text-3xl'>Global PropTech Stories</p>
-                        <p className='flex items-center gap-x-2 text-[#005EFF]'>
-                            <span className='text-sm cursor-pointer'>See more news</span>
+                    <div className='flex items-center justify-between mb-4 gap-x-3'>
+                        <p className='text-2xl font-semibold md:text-3xl'>Global PropTech Stories</p>
+                        <p className='flex items-center gap-x-1 sm:gap-x-2 text-[#005EFF]'>
+                            <span className='w-fit sm:block hidden text-sm cursor-pointer'>See more news</span>
+                            <span className='w-fit text-xs sm:hidden cursor-pointer'>Explore</span>
                             <ArrowRight size={15}/>
                         </p>
                     </div>
-                    <div className='flex flex-wrap justify-between'>
+                    <div className='flex flex-wrap justify-between gap-y-3 md:gap-y-0'>
                         <StoryCard
                             title='The Vision Behind Prudence’s New $80 Million Fund Totaling $230 Million' 
                             storyImage={Story1}

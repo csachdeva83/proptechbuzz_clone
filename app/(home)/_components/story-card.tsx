@@ -9,7 +9,7 @@ interface StoryProps {
 const StoryCard = ({title, storyImage}: StoryProps) => {
 
     return (
-        <div className='border border-gray-400 w-[32%] pb-2 rounded-2xl space-y-5 relative'>
+        <div className='border border-gray-400 w-full md:w-[32%] pb-2 rounded-2xl space-y-5 relative'>
             <Image
                 src={storyImage}
                 width={1080}

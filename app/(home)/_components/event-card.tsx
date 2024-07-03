@@ -15,7 +15,7 @@ interface EventProps {
 const EventCard = ({title, date, location, peopleJoined, eventImage}: EventProps) => {
 
     return (
-        <div className='flex flex-col justify-between border border-gray-400 w-[32%] lg:h-auto xl:h-96 rounded-2xl space-y-5'>
+        <div className='flex flex-col justify-between border border-gray-400 w-full md:w-[32%] lg:h-auto xl:h-96 rounded-2xl space-y-5'>
             <div className='space-y-2'>
                 <Image
                     src={eventImage}
@@ -36,7 +36,7 @@ const EventCard = ({title, date, location, peopleJoined, eventImage}: EventProps
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col lg:flex-row gap-y-3 lg:gap-y-0 items-center justify-between p-3 border-t border-gray-300 w-full'>
+            <div className='flex flex-row md:flex-col lg:flex-row gap-y-3 lg:gap-y-0 items-center justify-between p-3 border-t border-gray-300 w-full'>
                 <div className='flex items-center gap-x-2 xl:gap-x-3'>
                     <div className='flex relative -space-x-4'>
                         <Image 
@@ -58,7 +58,7 @@ const EventCard = ({title, date, location, peopleJoined, eventImage}: EventProps
                         <span className='text-[#005EFF] text-sm '>{peopleJoined}+</span> <span className='text-gray-500'>people going</span>
                     </p>
                 </div>
-                <button className='w-full lg:w-fit border border-gray-500 p-2 rounded-lg text-gray-500 text-sm lg:text-xs xl:text-base'>View Details</button>
+                <button className='w-fit md:w-full lg:w-fit border border-gray-500 p-2 rounded-lg text-gray-500 text-sm lg:text-xs xl:text-base'>View Details</button>
             </div>
         </div>
     )
