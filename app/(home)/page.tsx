@@ -1,3 +1,4 @@
+'use client'
 import { FlipWords } from '@/components/ui/flip-words';
 import Event1 from '@/public/event1.jpg';
 import Event2 from '@/public/event2.jpg';
@@ -17,6 +18,7 @@ import REdistribute from '../../public/redistribute.png';
 import EventCard from './_components/event-card';
 import Footer from './_components/footer';
 import LaunchCard from './_components/launch-card';
+import Navbar from './_components/navbar';
 import SpotlightCard from './_components/spotlight-card';
 import StoryCard from './_components/story-card';
 
@@ -25,8 +27,8 @@ const Home = () => {
     const words = ["Conversations", "Leaders", "Products", "News"];
 
     return (
-        <main className='w-full max-w-full flex flex-col items-center justify-center border border-green-600'>
-            {/* <Navbar /> */}
+        <main className='w-full max-w-full flex flex-col items-center justify-center bg-[#F9FBFC]'>
+            <Navbar />
             <article className='my-10 lg:my-14 xl:my-20 w-[93%] sm:w-[90%] lg:w-[85%] xl:w-[70%] flex flex-col gap-y-10 md:gap-y-12 lg:gap-y-14 xl:gap-y-20'>
                 <section className='bg-gradient-to-bl from-slate-100 to-blue-100 flex flex-col items-center justify-center gap-y-6 w-full rounded-2xl py-11'>
                     <div className='flex flex-col items-center text-center'>

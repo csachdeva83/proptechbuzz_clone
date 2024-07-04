@@ -46,7 +46,7 @@ const LaunchCard = ({logo, company, description, likes, location, features, foun
                         </div>
                     </div>
                     <div className='flex items-start justify-between flex-col gap-y-2'>
-                        <div className='flex items-center gap-x-2 overflow-y-scroll w-full overflow-x-scroll scroll-smooth overflow no-scrollbar'>
+                        <div className='flex items-center gap-x-2 w-full overflow-x-scroll scroll-smooth overflow no-scrollbar'>
                             {features.map((feature:string) => {
                                 return (
                                     <p className='text-xs md:text-sm flex items-center gap-x-1 border border-gray-400 w-fit min-w-max px-2 py-1 text-gray-800 rounded-full'>
