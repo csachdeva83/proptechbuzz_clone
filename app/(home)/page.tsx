@@ -157,19 +157,15 @@ const Home = () => {
                             features={[
                                 'Real Estate Data & Insights',
                                 'Marketing & Advertising',
-                                'Real Estate Data & Insights',
-                                'Marketing & Advertising',
-                                'Real Estate Data & Insights',
-                                'Marketing & Advertising'
                             ]}
                             founder1 = {{
                                 fullName: 'Sudhanshu Kejriwal',
-                                designation: 'Co-Founder',
+                                designation: 'Co-Founder/CEO',
                                 img: Founder1
                             }}
                             founder2 = {{
                                 fullName: 'Kartik Krishna',
-                                designation: 'Director',
+                                designation: 'Director/CTO',
                                 img: Founder2
                             }}
                         />
@@ -185,12 +181,12 @@ const Home = () => {
                             ]}
                             founder1 = {{
                                 fullName: 'Martin Decky',
-                                designation: 'CEO',
+                                designation: 'Co-Founder/CEO',
                                 img: Founder3
                             }}
                             founder2 = {{
                                 fullName: 'Peter Kanos',
-                                designation: 'CTO',
+                                designation: 'Co-Founder/CTO',
                                 img: Founder4
                             }}
                         />
