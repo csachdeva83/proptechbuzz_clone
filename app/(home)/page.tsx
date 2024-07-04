@@ -1,11 +1,16 @@
 'use client'
 import { FlipWords } from '@/components/ui/flip-words';
+import Captr from '@/public/captr.jpg';
+import DynamicPricing from '@/public/dynamic_pricing.jpg';
 import Event1 from '@/public/event1.jpg';
 import Event2 from '@/public/event2.jpg';
 import Event3 from '@/public/event3.jpg';
 import FlairConnect from '@/public/flair_connect.jpg';
 import Founder1 from '@/public/founder1.jpg';
 import Founder2 from '@/public/founder2.jpg';
+import Founder3 from '@/public/founder3.jpg';
+import Founder4 from '@/public/founder4.jpg';
+import Founder5 from '@/public/founder5.jpg';
 import Story1 from '@/public/story1.jpg';
 import Story2 from '@/public/story2.jpg';
 import Story3 from '@/public/story3.jpg';
@@ -169,45 +174,39 @@ const Home = () => {
                             }}
                         />
                         <LaunchCard 
-                            logo={FlairConnect}
-                            company='Flair Connect'
-                            description='Automate rent & specials in Google Ads & GBP.'
-                            location='North America'
-                            likes={15}
+                            logo={DynamicPricing}
+                            company='Dynamic Pricing'
+                            description='Dynamic Pricing is a real-time and AI-powered module to price residential real estate projects by taking into account up to 120 features to price each unit.'
+                            location='Europe'
+                            likes={7}
                             features={[
-                                'Real Estate Data & Insights',
-                                'Marketing & Advertising'
+                                'Construction',
+                                'Artificial Intelligence'
                             ]}
                             founder1 = {{
-                                fullName: 'Sudhanshu Kejriwal',
-                                designation: 'Co-Founder',
-                                img: Founder1
+                                fullName: 'Martin Decky',
+                                designation: 'CEO',
+                                img: Founder3
                             }}
                             founder2 = {{
-                                fullName: 'Kartik Krishna',
-                                designation: 'Director',
-                                img: Founder2
+                                fullName: 'Peter Kanos',
+                                designation: 'CTO',
+                                img: Founder4
                             }}
                         />
                         <LaunchCard 
-                            logo={FlairConnect}
-                            company='Flair Connect'
-                            description='Automate rent & specials in Google Ads & GBP.'
-                            location='North America'
-                            likes={15}
+                            logo={Captr}
+                            company='CAPTR'
+                            description='Boost Engagement Instantly with CAPTR&#39;s Code-Free Video Forms.'
+                            location='Australia'
+                            likes={6}
                             features={[
-                                'Real Estate Data & Insights',
-                                'Marketing & Advertising'
+                                'Broker/Agent Solutions',
                             ]}
                             founder1 = {{
-                                fullName: 'Sudhanshu Kejriwal',
-                                designation: 'Co-Founder',
-                                img: Founder1
-                            }}
-                            founder2 = {{
-                                fullName: 'Kartik Krishna',
-                                designation: 'Director',
-                                img: Founder2
+                                fullName: 'Steve Cachia',
+                                designation: 'Founder',
+                                img: Founder5
                             }}
                         />
                     </div>
